@@ -548,15 +548,15 @@ export default function OrderPage() {
                           : "border border-border bg-soft-sand hover:border-muted hover:bg-white"
                       }`}
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="flex h-11 w-16 shrink-0 items-center justify-center rounded-xl bg-white border border-border p-1 shadow-xs overflow-hidden">
+                      <div className="flex items-center gap-3.5">
+                        <div className="flex h-12 w-20 shrink-0 items-center justify-center rounded-xl bg-white border border-border/80 px-2 py-1.5 shadow-xs overflow-hidden">
                           {ch.logo ? (
                             <Image
                               src={ch.logo}
                               alt={ch.name}
-                              width={60}
-                              height={28}
-                              className="h-6 w-auto max-w-full object-contain"
+                              width={72}
+                              height={32}
+                              className="h-7 w-auto max-h-full max-w-full object-contain"
                             />
                           ) : (
                             <span className="font-extrabold text-[10px] text-deep-pine">
