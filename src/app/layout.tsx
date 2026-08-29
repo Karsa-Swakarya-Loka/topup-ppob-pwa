@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#14213d",
+  themeColor: "#1E2F5C",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -24,12 +24,13 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://topup.karyalo.id"),
   title: {
-    default: "TopUpPlay — Top Up Game & PPOB Termurah & Tercepat 24 Jam",
-    template: "%s — TopUpPlay",
+    default: "Karyalo Top Up — Top Up Game & PPOB Termurah & Tercepat 24 Jam",
+    template: "%s — Karyalo Top Up",
   },
   description:
-    "Platform Top Up Game Mobile Legends, Free Fire, Genshin Impact, Valorant, Steam Wallet, dan Pulsa PPOB otomatis 1-3 detik dengan QRIS All Payment bebas biaya admin.",
+    "Platform Top Up Game resmi Karyalo. Mobile Legends, Free Fire, Genshin Impact, Valorant, Steam Wallet, dan Pulsa PPOB otomatis 1-3 detik dengan QRIS All Payment bebas biaya admin.",
   keywords: [
+    "karyalo top up",
     "top up game murah",
     "top up diamond mlbb",
     "top up free fire",
@@ -42,17 +43,17 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "TopUpPlay",
+    title: "Karyalo Top Up",
   },
   icons: {
     icon: "/icons/icon-192.png",
     apple: "/icons/icon-192.png",
   },
   openGraph: {
-    title: "TopUpPlay — Top Up Game & PPOB Termurah 24 Jam",
+    title: "Karyalo Top Up — Top Up Game & PPOB Termurah 24 Jam",
     description: "Proses instan 1-3 detik otomatis resmi Moonton & Garena via QRIS & Virtual Account.",
     url: "https://topup.karyalo.id",
-    siteName: "TopUpPlay",
+    siteName: "Karyalo Top Up",
     locale: "id_ID",
     type: "website",
     images: [
@@ -60,13 +61,13 @@ export const metadata: Metadata = {
         url: "/images/promos/promo-mlbb.jpg",
         width: 1200,
         height: 630,
-        alt: "TopUpPlay Game Top Up Banner",
+        alt: "Karyalo Top Up Banner",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TopUpPlay — Top Up Game Resmi & Terpercaya",
+    title: "Karyalo Top Up — Top Up Game Resmi & Terpercaya",
     description: "Top Up Game & PPOB otomatis 1-3 detik via QRIS All Payment.",
     images: ["/images/promos/promo-mlbb.jpg"],
   },
@@ -80,7 +81,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "TopUpPlay",
+    name: "Karyalo Top Up",
     applicationCategory: "GameApplication, ShoppingApplication",
     operatingSystem: "All",
     offers: {

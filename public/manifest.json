@@ -1,11 +1,11 @@
 {
-  "name": "TopUpPlay - Top Up Game & PPOB Instan",
-  "short_name": "TopUpPlay",
-  "description": "Layanan Top Up Game Mobile Legends, Free Fire, Genshin Impact, dan PPOB Termurah & Otomatis 24 Jam.",
+  "name": "Karyalo Top Up - Top Up Game & PPOB Instan",
+  "short_name": "Karyalo TopUp",
+  "description": "Layanan Top Up Game dan PPOB Resmi Karyalo Termurah & Otomatis 24 Jam.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#090d16",
-  "theme_color": "#06b6d4",
+  "background_color": "#F9F9FB",
+  "theme_color": "#1E2F5C",
   "orientation": "portrait-primary",
   "categories": ["games", "shopping", "utilities"],
   "icons": [

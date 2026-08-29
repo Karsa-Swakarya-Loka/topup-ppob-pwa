@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Zap, Bell, Sparkles, X, CheckCircle2, ShieldCheck, Flame, Sliders } from "lucide-react";
+import Image from "next/image";
+import { Bell, Sparkles, X, CheckCircle2, ShieldCheck, Flame, Sliders } from "lucide-react";
 import { getStoredNotifications, requestNotificationPermission, sendLocalNotification } from "@/lib/push-notifications";
 import { PushPromoNotification } from "@/lib/types";
 
@@ -23,7 +24,7 @@ export default function Header() {
     setHasPermission(granted);
     if (granted) {
       await sendLocalNotification({
-        title: "Selamat Datang di TopUpPlay",
+        title: "Selamat Datang di Karyalo Top Up",
         body: "Notifikasi Flash Sale & Event Game sudah aktif. Dapatkan info harga promo pertama kali!",
         url: "/",
       });
@@ -46,20 +47,22 @@ export default function Header() {
         <div className="mx-auto flex max-w-(--container-content) items-center justify-between gap-4 px-4 py-3 md:px-6">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-deep-pine text-warm-white shadow-sm transition-transform group-hover:scale-105">
-              <Zap className="h-5 w-5 text-accent-cyan fill-current" />
+            <div className="relative flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Karyalo"
+                width={120}
+                height={34}
+                priority
+                className="h-8 w-auto object-contain transition-transform group-hover:scale-105"
+              />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="text-lg font-semibold tracking-tight text-deep-pine">
-                  TopUp<span className="text-karyalo-green">Play</span>
-                </span>
-                <span className="rounded-full bg-soft-sage px-2 py-0.5 text-[10px] font-semibold text-deep-pine">
-                  PWA
-                </span>
-              </div>
-              <span className="text-[10px] text-muted -mt-0.5 hidden sm:inline">
-                Top Up Game & PPOB Otomatis
+            <div className="flex items-center gap-1.5 border-l border-border pl-2.5">
+              <span className="text-xs font-semibold tracking-tight text-deep-pine">
+                Top Up <span className="text-karyalo-green">&amp; PPOB</span>
+              </span>
+              <span className="rounded-full bg-soft-sage px-2 py-0.5 text-[10px] font-semibold text-deep-pine">
+                PWA
               </span>
             </div>
           </Link>
