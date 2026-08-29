@@ -1,0 +1,42 @@
+{
+  "name": "TopUpPlay - Top Up Game & PPOB Instan",
+  "short_name": "TopUpPlay",
+  "description": "Layanan Top Up Game Mobile Legends, Free Fire, Genshin Impact, dan PPOB Termurah & Otomatis 24 Jam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#06b6d4",
+  "orientation": "portrait-primary",
+  "categories": ["games", "shopping", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Top Up MLBB",
+      "url": "/order/mobile-legends",
+      "description": "Beli Diamond Mobile Legends Cepat"
+    },
+    {
+      "name": "Top Up Free Fire",
+      "url": "/order/free-fire",
+      "description": "Beli Diamond Free Fire Instan"
+    },
+    {
+      "name": "Cek Riwayat Pesanan",
+      "url": "/history",
+      "description": "Lacak Status Transaksi"
+    }
+  ]
+}
