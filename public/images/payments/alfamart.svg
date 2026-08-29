@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40" fill="none">
+  <rect width="130" height="40" rx="8" fill="#D21E1E"/>
+  <rect x="8" y="10" width="20" height="20" rx="3" fill="#FFFFFF"/>
+  <path d="M12 25l6-10 6 10h-12z" fill="#005EAA"/>
+  <text x="34" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" letter-spacing="0.5">Alfamart</text>
+</svg>

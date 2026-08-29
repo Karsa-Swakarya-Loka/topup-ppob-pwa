@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40" fill="none">
+  <rect width="130" height="40" rx="8" fill="#003D79"/>
+  <!-- Gold waves ribbon -->
+  <path d="M12 14c4 0 6 3 9 3s5-3 9-3c-3 3-5 5-9 5s-5-2-9-5z" fill="#F4B41A"/>
+  <path d="M15 18c4 0 6 3 9 3s5-3 9-3c-3 3-5 5-9 5s-5-2-9-5z" fill="#F4B41A" opacity="0.7"/>
+  <text x="36" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" letter-spacing="0.5">mandiri</text>
+</svg>

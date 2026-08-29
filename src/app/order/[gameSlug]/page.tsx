@@ -549,11 +549,17 @@ export default function OrderPage() {
                       }`}
                     >
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white border border-border text-deep-pine shadow-xs">
-                          {ch.id === "QRIS" ? (
-                            <QrCode className="h-5 w-5 text-deep-pine" />
+                        <div className="flex h-11 w-16 shrink-0 items-center justify-center rounded-xl bg-white border border-border p-1 shadow-xs overflow-hidden">
+                          {ch.logo ? (
+                            <Image
+                              src={ch.logo}
+                              alt={ch.name}
+                              width={60}
+                              height={28}
+                              className="h-6 w-auto max-w-full object-contain"
+                            />
                           ) : (
-                            <span className="font-extrabold text-[11px] text-deep-pine">
+                            <span className="font-extrabold text-[10px] text-deep-pine">
                               {ch.id.replace("_VA", "")}
                             </span>
                           )}

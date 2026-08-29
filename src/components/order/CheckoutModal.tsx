@@ -7,6 +7,7 @@ import { formatRupiah } from "@/lib/utils";
 import { digiflazz } from "@/lib/api-digiflazz";
 import QRCode from "qrcode";
 import confetti from "canvas-confetti";
+import Image from "next/image";
 import {
   CheckCircle2,
   Clock,
@@ -222,9 +223,14 @@ export default function CheckoutModal({ transaction, paymentResult, onClose }: C
               {/* QRIS Display */}
               {qrDataUrl && (
                 <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-white p-6 text-center shadow-xs">
-                  <div className="mb-3 flex items-center gap-1.5">
-                    <QrCode className="h-4 w-4 text-deep-pine" />
-                    <span className="text-xs font-bold text-deep-pine">Scan QRIS All Payment</span>
+                  <div className="mb-3 flex items-center justify-center">
+                    <Image
+                      src="/images/payments/qris.svg"
+                      alt="QRIS Standar Nasional"
+                      width={110}
+                      height={36}
+                      className="h-8 w-auto object-contain"
+                    />
                   </div>
 
                   <div className="rounded-2xl border border-border p-3 bg-white shadow-sm">

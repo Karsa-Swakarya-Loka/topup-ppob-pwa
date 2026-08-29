@@ -60,6 +60,32 @@ export default function HeroBanner() {
             </p>
           </div>
 
+          {/* Mobile Product Artwork Banner */}
+          <div className="w-full md:hidden">
+            <Link
+              href={`/order/${promo.gameSlug}`}
+              className="group relative block aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md shadow-lg"
+            >
+              <Image
+                src={promo.image}
+                alt={promo.title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                sizes="100vw"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-deep-pine/90 via-transparent to-transparent opacity-80" />
+              <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between">
+                <span className="text-[10px] font-bold text-accent-cyan uppercase tracking-wider">
+                  PROMO SPESIAL
+                </span>
+                <span className="rounded-full bg-white/20 backdrop-blur-md px-2.5 py-0.5 text-[10px] font-bold text-warm-white">
+                  Beli Sekarang &rarr;
+                </span>
+              </div>
+            </Link>
+          </div>
+
           <div className="pt-2 flex flex-wrap items-center gap-4 w-full">
             <Link
               href={`/order/${promo.gameSlug}`}
